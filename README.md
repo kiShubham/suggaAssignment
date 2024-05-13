@@ -12,23 +12,27 @@ Overview:
 
 The Task Management System allows users to create, update, delete, and view tasks. Users can register for an account, log in, and only access their tasks. The system also includes basic authentication and authorization functionalities.
 
-1. Endpoints and Libraries:
+### 1. Endpoints and Libraries:
 
 Define Endpoints:
 
 Create endpoints for CRUD operations on tasks:
 
-GET /tasks - Get all tasks
-POST /tasks - Create a new task
-GET /tasks/:id - Get a specific task
-PUT /tasks/:id - Update a task
-DELETE /tasks/:id - Delete a task
+GET api/tasks/ - Get all tasks ;
+
+POST api/tasks/ - Create a new task;
+
+GET api/tasks/:id - Get a specific task;
+
+PUT api/tasks/:id - Update a task;
+
+DELETE api/tasks/:id - Delete a task;
 
 Libraries:
 Use Express.js for routing.
 Use Mongoose for MongoDB connection and modeling.
 
-2. Backend Architecture: MVCS
+### 2. Backend Architecture: MVCS
 
 Routes:
 Define routes for tasks in separate files under the routes folder.

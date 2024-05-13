@@ -10,17 +10,15 @@ Making a mern application for task management ;
 
 Overview:
 
-The Task Management System allows users to create, update, delete, and view tasks. Users can register for an account, log in, and only access their tasks. The system also includes basic authentication and authorization functionalities.
+The Task Management System allows users to create, update, delete, and view tasks. 
 
 ### 1. Endpoints and Libraries:
 
-Define Endpoints:
-
-Create endpoints for CRUD operations on tasks:
+Created endpoints for CRUD operations on tasks:
 
 GET api/tasks/ - Get all tasks ;
 
-POST api/tasks/ - Create a new task;
+POST api/tasks/ - Create's a new task;
 
 GET api/tasks/:id - Get a specific task;
 
@@ -35,11 +33,11 @@ Use Mongoose for MongoDB connection and modeling.
 ### 2. Backend Architecture: MVCS
 
 Routes:
-Define routes for tasks in separate files under the routes folder.
+Defined routes for tasks in separate files under the routes folder.
 Use Express Router to handle routing.
 
 Controllers:
-Create controller functions for handling requests related to tasks.
+Created controller functions for handling requests related to tasks.
 These functions will interact with services and send responses.
 
 Services:

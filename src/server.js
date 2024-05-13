@@ -7,8 +7,10 @@ app.use(express.json());
 const taskRoutes = require("./routes/task.routes");
 
 // connection to mongoose
+const mongodbURI =
+  "mongodb+srv://newUser:newUser@cluster0.kitzd9m.mongodb.net/?retryWrites=true&w=majority&appName=SuggaTaskManager";
 mongoose
-  .connect("mongodb://127.0.0.1:27017/SuggaTaskManager")
+  .connect(mongodbURI)
   .then(() => {
     console.log("connected to DataBase😀");
   })

@@ -34,7 +34,7 @@ const update = async (id, updatedData) => {
     const updateOpertion = { $set: updatedData };
     const options = { new: true };
     const task = await Task.findOneAndUpdate(filter, updateOpertion, options);
-    console.log(task);
+
     return task;
     //
   } catch (error) {
